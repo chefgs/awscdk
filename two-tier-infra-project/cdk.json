@@ -1,0 +1,7 @@
+{
+    "app": "npx ts-node bin/two-tier-infra-project.ts",
+    "context": {
+      "@aws-cdk/core:stackRelativeExports": true
+    }
+  }
+  
