@@ -27,7 +27,7 @@ This guide will cover setting up your environment, writing TypeScript code, comp
 3. **Install AWS CDK**
    - Install the AWS CDK CLI globally using npm:
      ```bash
-     npm install -g aws-cdk
+     npm install aws-cdk-lib
      ```
    - Verify the installation by running:
      ```bash
