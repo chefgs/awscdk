@@ -1,7 +1,7 @@
 Best Practices for Managing AWS CDK - TypeScript Code
 =====================================================
 
-# Introduction
+## Introduction
 It's important to organize your codebase clearly when structuring an AWS CDK project for TypeScript in GitHub, and ensure you include all necessary files while excluding sensitive or unnecessary files. 
 
 Here's a step-by-step guide to structuring your code in GitHub:
@@ -16,7 +16,7 @@ my-cdk-project/
 |   |-- my-cdk-project.ts        # Entry point of the CDK app
 |-- lib/
 |   |-- my-cdk-project-stack.ts  # Defines a stack
-|   |-- environments/            # Custom folder for environment-specific configurations
+|-- environments/            # Custom folder for environment-specific configurations
 |       |-- dev.ts
 |       |-- prod.ts
 |-- node_modules/                # Node.js modules (excluded from Git)
@@ -33,7 +33,8 @@ my-cdk-project/
 
 1. **Source Code**:
     - `bin/`: Contains the entry point of your CDK application.
-    - `lib/`: Contains your stack definitions and environment configurations.
+    - `lib/`: Contains your stack definitions.
+    - `environments/`: environment configurations.
     - `test/`: Contains your unit tests.
 
 2. **Configuration Files**:
@@ -82,7 +83,11 @@ cdk.out/
 
 ## Add CDK Code 
 
-Run `cdk init` command for typescipt code and start adding your files
+When we run `cdk init` command for typescipt code, it auto generates your files & directory structure
+
+     ```bash
+     cdk init app --language typescript
+     ```
 
 ---
 
