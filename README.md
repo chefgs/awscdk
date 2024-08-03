@@ -1,58 +1,100 @@
+# AWS CDK Project
 
-# Welcome to your CDK Python project!
+This project contains examples for AWS CDK demo in both Python and TypeScript. It demonstrates how to create and manage AWS infrastructure using AWS Cloud Development Kit (CDK).
 
-This is a blank project for CDK development with Python.
+## Project Structure
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+The project is organized into two main directories:
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+- `cdk-python/`: Contains AWS CDK examples written in Python.
+- `cdk-typescript/`: Contains AWS CDK examples written in TypeScript.
 
-To manually create a virtualenv on MacOS and Linux:
+## Prerequisites
 
-```
-$ python3 -m venv .venv
-```
+- AWS CLI configured with your credentials.
+- Node.js (for TypeScript examples).
+- Python 3.6+ (for Python examples).
+- AWS CDK installed globally.
 
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
+### Install AWS CDK
 
-```
-$ source .venv/bin/activate
+```sh
+npm install -g aws-cdk
 ```
 
-If you are a Windows platform, you would activate the virtualenv like this:
+## Getting Started
 
+### TypeScript
+
+1. **Navigate to the TypeScript directory:**
+
+    ```sh
+    cd typescript
+    ```
+
+2. **Install dependencies:**
+
+    ```sh
+    npm install
+    ```
+
+3. **Synthesize the CloudFormation template:**
+
+    ```sh
+    cdk synth
+    ```
+
+4. **Deploy the stack:**
+
+    ```sh
+    cdk deploy
+    ```
+
+### Python
+
+1. **Navigate to the Python directory:**
+
+    ```sh
+    cd python
+    ```
+
+2. **Create a virtual environment:**
+
+    ```sh
+    python3 -m venv .env
+    source .env/bin/activate
+    ```
+
+3. **Install dependencies:**
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. **Synthesize the CloudFormation template:**
+
+    ```sh
+    cdk synth
+    ```
+
+5. **Deploy the stack:**
+
+    ```sh
+    cdk deploy
+    ```
+
+## Cleanup
+
+To delete the resources created by the CDK stacks, run the following command in the respective directories:
+
+```sh
+cdk destroy
 ```
-% .venv\Scripts\activate.bat
-```
 
-Once the virtualenv is activated, you can install the required dependencies.
+## Contributing
 
-```
-$ pip install -r requirements.txt
-```
+Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
 
-At this point you can now synthesize the CloudFormation template for this code.
+## License
 
-```
-$ cdk synth
-```
-
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
-
-## Useful commands
-
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
-
-Enjoy!
+This project is licensed under the MIT License. See the LICENSE file for details.

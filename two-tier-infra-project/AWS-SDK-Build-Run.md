@@ -29,7 +29,7 @@ This guide will cover setting up your environment, writing TypeScript code, comp
      ```bash
      npm install aws-cdk-lib
      ```
-   - Use the lastest LTS node version.
+   - Use the latest LTS node version.
    ```
      nvm use --lts
    ```

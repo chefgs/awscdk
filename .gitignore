@@ -1,3 +1,25 @@
+# TypeScript ignores
+# Logs
+*.log
+
+# Runtime data
+node_modules/
+cdk.out/
+
+# TypeScript compiled output
+*.js
+*.d.ts
+*.js.map
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Python ignores
 *.swp
 package-lock.json
 __pycache__
